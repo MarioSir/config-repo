@@ -1,3 +1,4 @@
+
 server:
   port: 8082
 eureka:
@@ -7,6 +8,7 @@ eureka:
   instance:
     prefer-ip-address: true
 spring:
+  profiles: release
   application:
     name: order
   datasource:
@@ -19,10 +21,6 @@ spring:
     time-zone: GMT+8
   jpa:
     show-sql: true
-  cloud:
-    config:
-      label: release
-      profile: release
 logging:
   level:
     org.springframework.security:
