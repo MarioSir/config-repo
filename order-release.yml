@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 eureka:
   client:
     service-url:
@@ -19,9 +19,6 @@ spring:
     time-zone: GMT+8
   jpa:
     show-sql: true
-  cloud:
-    config:
-      label: release
 logging:
   level:
     org.springframework.security:
@@ -35,3 +32,4 @@ logging:
 #PRODUCT:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+lable: release
