@@ -22,6 +22,7 @@ spring:
   cloud:
     config:
       label: release
+      profile: release
 logging:
   level:
     org.springframework.security:
