@@ -28,3 +28,6 @@ logging:
 #PRODUCT:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+refreshScopeConfig:
+    id: 123456
+    name: test
