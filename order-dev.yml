@@ -30,4 +30,4 @@ logging:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 refreshScopeConfig:
     id: 123456
-    name: 123456
+    name: testAutPushConfig
