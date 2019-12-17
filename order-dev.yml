@@ -15,6 +15,11 @@ spring:
     time-zone: GMT+8
   jpa:
     show-sql: true
+  rabbitmq:
+    host: localhost
+    port: 56721
+    username: guest
+    password: guest
 logging:
   level:
     org.springframework.security:
