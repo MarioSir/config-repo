@@ -15,6 +15,9 @@ spring:
     time-zone: GMT+8
   jpa:
     show-sql: true
+  redis:
+    host: localhsot
+    port: 6379
 logging:
   level:
     org.springframework.security:
