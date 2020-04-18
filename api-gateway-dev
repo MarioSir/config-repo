@@ -1,0 +1,7 @@
+server:
+  port: 9000
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: api-gateway
