@@ -4,8 +4,6 @@ server:
   instance:
     prefer-ip-address: true
 spring:
-  application:
-    name: user
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.20.134/shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
