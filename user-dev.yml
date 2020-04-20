@@ -1,17 +1,15 @@
-    
 server:
-  port: 8083
+  port: 8081
   instance:
     prefer-ip-address: true
 spring:
+  application:
+    name: user
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.20.134/shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://192.168.20.134:3306/shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
     username: root
     password: root
-  jackson:
-    date-format: yyyy-MM-dd HH:mm:ss
-    time-zone: GMT+8
   jpa:
     show-sql: true
   rabbitmq:
@@ -32,9 +30,3 @@ logging:
     org.hibernate.engine.QueryParameters: debug
     org.hibernate.engine.query.HQLQueryPlan: debug
     org.hibernate.type.descriptor.sql.BasicBinder: trace
-#PRODUCT:
-#  ribbon:
-#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-refreshScopeConfig:
-    id: 123456
-    name: testAutPushConfig
