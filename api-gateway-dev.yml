@@ -6,7 +6,7 @@ spring:
   application:
     name: api-gateway
 zuul:
-  #针对所有服务忽略敏感头
+  #针对所有服务忽略敏感头设置
   sensitive-headers:
   #查看zuul路由规则油/application/routes change=> /actuator/routes
   routes:
