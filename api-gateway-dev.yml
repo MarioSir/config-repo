@@ -32,3 +32,6 @@ management:
     web:
       exposure:
         include: "*"
+redis:
+    host: 192.168.20.134
+    port: 6379
