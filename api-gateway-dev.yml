@@ -6,6 +6,8 @@ spring:
   application:
     name: api-gateway
 zuul:
+  #针对所有服务忽略敏感头
+  sensitive-headers:
   #查看zuul路由规则油/application/routes change=> /actuator/routes
   routes:
     #配置商品路由规则 myProduct 自定义
@@ -13,7 +15,7 @@ zuul:
           path: /myProduct/**
     #服务名称
           serviceId: product
-          #敏感头设置  如cookie设置：如果不设置，则后面request请求获取不到cookie信息
+          #针对单个服务设置敏感头设置  如cookie设置：如果不设置，则后面request请求获取不到cookie信息
           sensitiveHeaders:
     #简洁写法
 #    product: /myProduct/**
