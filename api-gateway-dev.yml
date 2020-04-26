@@ -5,3 +5,28 @@ server:
 spring:
   application:
     name: api-gateway
+zuul:
+  #查看zuul路由规则油/application/routes change=> /actuator/routes
+  routes:
+    #配置商品路由规则 myProduct 自定义
+        myProduct:
+          path: /myProduct/**
+    #服务名称
+          serviceId: product
+          #敏感头设置  如cookie设置：如果不设置，则后面request请求获取不到cookie信息
+          sensitiveHeaders:
+    #简洁写法
+#    product: /myProduct/**
+  #配置禁止路由规则 - /
+#  ignored-patterns:
+#    - /**/product/list
+ribbon:
+  #请求处理的超时时间
+  ReadTimeout: 120000
+  #请求连接的超时时间
+#由于actuator插件默认未将routes endpoint暴露出来，在项目的yml或者properties属性文件中配置一下即可：
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
