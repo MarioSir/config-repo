@@ -2,6 +2,8 @@ server:
   port: 8081
   instance:
     prefer-ip-address: true
+  tomcat:
+    uri-encoding: UTF-8
 spring:
   application:
     name: product
@@ -12,6 +14,11 @@ spring:
     password: root
   jpa:
     show-sql: true
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
 logging:
   level:
     org.springframework.security:
