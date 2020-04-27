@@ -2,6 +2,8 @@ server:
   #port: 8082
   instance:
     prefer-ip-address: true
+  tomcat:
+    uri-encoding: UTF-8
 spring:
   application:
     name: order
@@ -15,6 +17,11 @@ spring:
     time-zone: GMT+8
   jpa:
     show-sql: true
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
 logging:
   level:
     org.springframework.security:
