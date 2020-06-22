@@ -7,7 +7,7 @@ spring:
     name: message
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost/shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://192.168.88.128/shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
     username: root
     password: root
   jackson:
@@ -21,7 +21,7 @@ spring:
     username: guest
     password: guest
   redis:
-    host: localhost
+    host: 192.168.88.128
     port: 6379
 logging:
   level:
