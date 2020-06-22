@@ -7,7 +7,7 @@ spring:
     name: order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.20.134/shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://192.168.88.128/shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
     username: root
     password: root
   jackson:
@@ -21,7 +21,7 @@ spring:
     username: guest
     password: guest
   redis:
-    host: 192.168.20.134
+    host: 192.168.88.128
     port: 6379
 logging:
   level:
