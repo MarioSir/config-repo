@@ -7,9 +7,9 @@ spring:
     name: message
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.88.128/shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
-    username: root
-    password: root
+    url: jdbc:mysql://192.168.88.128/shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: hanwei
+    password: hanwei
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
