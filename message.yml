@@ -1,0 +1,7 @@
+server:
+  port: 8084
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: message
